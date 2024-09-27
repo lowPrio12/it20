@@ -1,6 +1,6 @@
-package multidimen;
+package MultiDimensional;
 
-public class MultiDimen {
+public class MultiDimensionalArray {
 
     public static void main(String[] args) {
         String[][] memNames = {
@@ -14,6 +14,5 @@ public class MultiDimen {
             System.out.println();
 
         }
-
     }
 }
