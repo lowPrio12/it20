@@ -20,6 +20,21 @@ public class main {
             System.out.println("6. Exit ");
 
             String action = scan.nextLine();
+
+            if (action.equals("1")) {
+
+                System.out.println("What is the name that you would like to add in the list? ");
+                String items = scan.nextLine();
+                System.out.println();
+                list.insertItem(items);
+                System.out.println();
+
+            } else if (action.equals("2")) {
+
+                list.displayItems();
+                System.out.println();
+
+            }
         }
     }
 }
