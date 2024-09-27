@@ -34,24 +34,29 @@ public class main {
                 list.displayItems();
                 System.out.println();
 
-            }
-            else if (action.equals("3")) {
+            } else if (action.equals("3")) {
 
                 System.out.println("What is the index of the name that you want to update?");
                 int item = Integer.parseInt(scan.nextLine());
-                System.out.println(" And what is the replacement of the name? ");
+                System.out.println(" And what is the name replacement of the name? ");
                 String repItem = scan.nextLine();
                 list.updateItem(item, repItem);
                 System.out.println();
 
-            }
-            else if (action.equals("4")) {
+            } else if (action.equals("4")) {
 
                 System.out.println("What is the name that you want to find? ");
                 String item = scan.nextLine();
                 list.findItem(item);
                 System.out.println();
 
+            } else if (action.equals("5")) {
+
+                System.out.println("What is the index of the name that you want to delete?");
+                list.displayItems();
+                int index = Integer.parseInt(scan.nextLine());
+                list.deleteItem(index);
+                System.out.println();
             }
         }
     }

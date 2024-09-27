@@ -38,4 +38,13 @@ public class ItemManager {
         }
         return index;
     }
+    public void deleteItem(int index) {
+        
+        if (index >= 0 && index < items.size()) {
+            String removedItem = items.remove(index);
+            System.out.println("Deleted: " + removedItem);
+        } else {
+            System.out.println("Index out of bounds.");
+        }
+    }
 }
