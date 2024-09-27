@@ -45,6 +45,14 @@ public class main {
                 System.out.println();
 
             }
+            else if (action.equals("4")) {
+
+                System.out.println("What is the name that you want to find? ");
+                String item = scan.nextLine();
+                list.findItem(item);
+                System.out.println();
+
+            }
         }
     }
 }
