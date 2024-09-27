@@ -35,6 +35,16 @@ public class main {
                 System.out.println();
 
             }
+            else if (action.equals("3")) {
+
+                System.out.println("What is the index of the name that you want to update?");
+                int item = Integer.parseInt(scan.nextLine());
+                System.out.println(" And what is the replacement of the name? ");
+                String repItem = scan.nextLine();
+                list.updateItem(item, repItem);
+                System.out.println();
+
+            }
         }
     }
 }
