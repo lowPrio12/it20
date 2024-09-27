@@ -58,6 +58,16 @@ public class main {
                 list.deleteItem(index);
                 System.out.println();
             }
+            else if (action.equals("6")) {
+
+                System.out.println("Thank you for using my system =) ");
+                break;
+                
+            } else {
+
+                System.out.println(" DIlI NA PWEDE! ");
+
+            }
         }
     }
 }
