@@ -34,6 +34,14 @@ public class main {
         list.deleteByValue(number6);
         list.printList();
         
-       
+        //Move/Swap Pointer
+        System.out.println();
+        System.out.println("Movingn/Swapping node from index 1 to index 0");
+        System.out.println("Enter the first number you want to move/swap: ");
+        int number7 = wow.nextInt();
+        System.out.println("Enter the second number you want to move/swap: ");
+        int number8 = wow.nextInt();
+        list.moveNodePointer(number7, number8);
+        list.printList();
 	}
 }
