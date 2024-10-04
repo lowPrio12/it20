@@ -34,5 +34,15 @@ public class Main {
         }
 
     }
+    
+     public static void move() {
+        System.out.println("Enter the first index you want to swap: ");
+        int element1 = sc.nextInt();
+        System.out.println("Enter the second index you want to swap: ");
+        int element2 = sc.nextInt();
+
+        list.moveNodePointer(element1, element2);
+        list.printList();
+    }
 
 }
