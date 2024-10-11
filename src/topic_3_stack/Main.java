@@ -35,6 +35,8 @@ public class Main {
                     stack.size();
                     break;
                 case 4:
+                    System.out.println("Thank you, and comeback and run it again!!");
+                    System.exit(0);
                     break;
             }
 
