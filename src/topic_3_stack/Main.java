@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(5);
         System.out.println("Hello there!");
-        
+
         while (true) {
             System.out.println("Choose what you want to do: "
                     + " 1. Size"
@@ -16,6 +16,19 @@ public class Main {
                     + " 3. Pop"
                     + " 4. Exit");
             int choice = sc.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Stack size is: " + stack.size());
+                    System.out.println("~~~~~~~~~~~~~~~~~~");
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+            }
+
         }
 
     }
