@@ -34,6 +34,30 @@ public class Main {
              System.out.println();
              customerQueue.displayQueue();
              */
+            switch (choice) {
+                case "1":
+                    System.out.print("Enter customer name: ");
+                    String customerName = sc.nextLine();
+                    customerQueue.enqueue(new Customer(customerName));
+                    break;
+
+                case "2":
+                    customerQueue.dequeue();
+                    break;
+
+                case "3":
+                    customerQueue.displayQueue();
+                    break;
+
+                case "4":
+                    System.out.println("Exiting the system. Goodbye!");
+                    sc.close(); // Close the scanner
+                    return; // Exit the program
+
+                default:
+                    System.out.println("Invalid option. Please try again.");
+            }
         }
+        
     }
 }
