@@ -7,9 +7,9 @@ public class Main {
         Queue customerQueue = new Queue();
         
         // Adding customers to the queue
-	     customerQueue.enqueue(new Customer("Cliff"));
-	     customerQueue.enqueue(new Customer("Janoi"));
-	     customerQueue.enqueue(new Customer("Redd"));
+	     customerQueue.enqueue(new Customer("Kent Coming"));
+	     customerQueue.enqueue(new Customer("Dexter Saldivar"));
+	     customerQueue.enqueue(new Customer("Joshua Gabitano"));
 	     
 	     System.out.println();
 	     customerQueue.displayQueue();
