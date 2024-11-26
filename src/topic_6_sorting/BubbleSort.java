@@ -20,4 +20,7 @@ public class BubbleSort {
             }
         }
     }
+    public static void printArray(int[] arr) {
+        
+    }
 }
