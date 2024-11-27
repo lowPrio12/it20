@@ -44,9 +44,30 @@ public class MergeSort {
 
     public static void printArray(int[] arr) {
         for (int i : arr) {
-            System.out.print(i + " "); 
+            System.out.print(i + " ");
         }
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        System.out.println("Original array:");
+        printArray(arr);
+        mergeSort(arr);
+
+        System.out.println("Sorted array:");
+        printArray(arr);
+
+        scanner.close();
     }
 
 }
