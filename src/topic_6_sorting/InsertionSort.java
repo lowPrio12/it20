@@ -41,10 +41,14 @@ public class InsertionSort {
         }
         System.out.println("Original array:");
         printArray(arr);
+        long startTime = System.currentTimeMillis();
         insertionSort(arr);
+        long endTime = System.currentTimeMillis();
+        long timeTaken = endTime - startTime;
         System.out.println("Sorted array:");
         printArray(arr);
 
+        System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
         scanner.close();
     }
 
