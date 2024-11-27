@@ -1,15 +1,9 @@
 package topic_6_sorting;
 
 import java.util.Scanner;
-
-/**
- *
- * @author Ranin
- */
 public class BubbleSort {
 
     public static void bubbleSort(int[] arr) {
-
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -29,7 +23,7 @@ public class BubbleSort {
         }
         System.out.println();
     }
-
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -42,10 +36,14 @@ public class BubbleSort {
         }
         System.out.println("Original array:");
         printArray(arr);
+        long startTime = System.currentTimeMillis();
         bubbleSort(arr);
-        
+        long endTime = System.currentTimeMillis();
+        long timeTaken = endTime - startTime;
+
         System.out.println("Sorted array:");
         printArray(arr);
+        System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
         scanner.close();
     }
 }
